@@ -3,8 +3,8 @@ All the tools and configs we use for daily dev work. Includes linters, formatter
 
 These are the tools we use:
 
-- [ESLint](## ESLint)
-- [Prettier](## Prettier)
+- [ESLint](#ESLint)
+- [Prettier](#Prettier)
 
 ## ESLint
 
