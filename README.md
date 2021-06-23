@@ -11,7 +11,7 @@ These are the tools we use at the moment:
 Install the configuration with:
 
 ```
-npm i @digital-h/eslint-config
+npm i --save-dev eslint @digital-h/eslint-config
 ```
 
 After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`):

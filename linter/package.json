@@ -22,5 +22,9 @@
   "homepage": "https://github.com/digital-h-gmbh/devtools#readme",
   "peerDependencies": {
     "eslint": ">= 3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0"
   }
 }
