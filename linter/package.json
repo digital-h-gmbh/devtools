@@ -1,0 +1,26 @@
+{
+  "name": "@digital-h/eslint-config",
+  "version": "1.0.0",
+  "description": "The ESLint configuration for Digital-H",
+  "main": "main.js",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-h-gmbh/devtools.git"
+  },
+  "keywords": [
+    "eslint",
+    "digital-h"
+  ],
+  "author": "Digital-H GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digital-h-gmbh/devtools/issues"
+  },
+  "homepage": "https://github.com/digital-h-gmbh/devtools#readme",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}

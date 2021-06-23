@@ -8,4 +8,21 @@ These are the tools we use at the moment:
 
 ## ESLint
 
+Install the configuration with:
+
+```
+npm i @digital-h/eslint-config
+```
+
+After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`):
+
+```
+{
+  ...
+  "extends": "@digital-h/eslint-config"
+}
+```
+
+This allows for addition of custom rules in your config, if there is a need for it. Should there be a need to fully disable or change a rule from this configuration, please open a Pull Request.
+
 ## Prettier
