@@ -4,7 +4,7 @@
   "description": "The ESLint configuration for Digital-H",
   "main": "main.js",
   "scripts": {
-    "publish": "npm publish --access public"
+    "publicpublish": "npm publish --access public"
   },
   "repository": {
     "type": "git",

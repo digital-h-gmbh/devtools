@@ -30,3 +30,28 @@ This allows for addition of custom rules in your config, if there is a need for 
 Currently only general Javascript and Typescript code is linted. In the future we want to expand to React, React Native, Angular and Node.js (with express and nest.js rules).
 
 ## Prettier
+
+Install the configuration with:
+
+```
+npm i --save-dev prettier @digital-h/prettier-config
+```
+
+After that you can use it in your package.json:
+
+```
+{
+  ...
+  "prettier": "@digital-h/prettier-config"
+}
+```
+
+Or reference it by exporting a single string from your Prettier configuration file: `@digital-h/prettier-config`. If you want to override some rules, you have to use `.prettierrc.js` as your configuration file format and then declare the package, as well as your additional rules as follows:
+
+```
+module.exports = {
+  ...require("@company/prettier-config"),
+  // Below are your overrides
+  semi: false,
+};
+```

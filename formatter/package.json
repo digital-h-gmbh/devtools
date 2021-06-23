@@ -1,0 +1,24 @@
+{
+  "name": "@digital-h/prettier-config",
+  "version": "1.2.0",
+  "description": "The current prettier config for Digital-H",
+  "main": "index.js",
+  "scripts": {
+    "publicpublish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-h-gmbh/devtools.git"
+  },
+  "keywords": [
+    "prettier",
+    "formatter",
+    "digital-h"
+  ],
+  "author": "Digital-H GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digital-h-gmbh/devtools/issues"
+  },
+  "homepage": "https://github.com/digital-h-gmbh/devtools#readme"
+}
