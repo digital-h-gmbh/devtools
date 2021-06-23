@@ -25,4 +25,8 @@ After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`
 
 This allows for addition of custom rules in your config, if there is a need for it. Should there be a need to fully disable or change a rule from this configuration, please open a Pull Request.
 
+### Supported Languages/Frameworks
+
+Currently only general Javascript and Typescript code is linted. In the future we want to expand to React, React Native, Angular and Node.js (with express and nest.js rules).
+
 ## Prettier
