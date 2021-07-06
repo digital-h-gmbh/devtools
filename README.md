@@ -23,6 +23,8 @@ After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`
 }
 ```
 
+If you don't have a config yet, create one by doing `npx eslint --init`.
+
 This allows for addition of custom rules in your config, if there is a need for it. Should there be a need to fully disable or change a rule from this configuration, please open a Pull Request.
 
 ### Supported Languages/Frameworks
@@ -65,4 +67,3 @@ If you want to collaborate set up a PR with your code changes. Currently you hav
 npm version <NEW_VERSION_NUMBER>
 npm run publicpublish
 ```
-# In the /linter directory - Make sure you are logged in and part of the digital-h npm organization
