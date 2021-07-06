@@ -62,6 +62,7 @@ If you want to collaborate set up a PR with your code changes. Currently you hav
 
 ```
 # In the respective directory - Make sure you are logged in and part of the digital-h npm organization
+npm version <NEW_VERSION_NUMBER>
 npm run publicpublish
 ```
 # In the /linter directory - Make sure you are logged in and part of the digital-h npm organization
