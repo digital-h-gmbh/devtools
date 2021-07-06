@@ -55,3 +55,13 @@ module.exports = {
   semi: false,
 };
 ```
+
+## Collaboration
+
+If you want to collaborate set up a PR with your code changes. Currently you have to manually publish the included packages to npm. You can do this by running:
+
+```
+# In the respective directory - Make sure you are logged in and part of the digital-h npm organization
+npm run publicpublish
+```
+# In the /linter directory - Make sure you are logged in and part of the digital-h npm organization
