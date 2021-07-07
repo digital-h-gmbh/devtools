@@ -1,0 +1,25 @@
+{
+  "name": "sample-package-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prettier:check": "prettier --check 'src/**/*.ts'",
+    "prettier:format": "prettier --write 'src/**/*.ts'"
+  },
+  "author": "Digital-H GmbH",
+  "license": "MIT",
+  "devDependencies": {
+    "@digital-h/eslint-config": "^1.5.0",
+    "@digital-h/prettier-config": "^1.3.1",
+    "@types/jest": "^26.0.24",
+    "eslint": "^7.30.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "prettier": "@digital-h/prettier-config"
+}

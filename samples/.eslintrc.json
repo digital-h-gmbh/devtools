@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["@digital-h/eslint-config"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "samples/tsconfig.json"
+  },
+  "rules": {}
+}
