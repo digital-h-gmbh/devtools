@@ -7,6 +7,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:rxjs/recommended",
     "plugin:import/typescript",
+    "prettier",
   ],
   rules: {
     "prettier/prettier": "error",
@@ -21,22 +22,20 @@ module.exports = {
     "max-nested-callbacks": ["error", 3],
     "no-unused-vars": "error",
     "id-length": ["error", { min: 4 }],
-    "space-in-parens": ["error", "always"],
-    "sort-imports": [
+    "import/order": [
       "error",
       {
-        memberSyntaxOrder: ["none", "all", "multiple", "single"],
+        groups: [
+          "builtin",
+          "external",
+          "type",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+        ],
       },
-    ],
-    "import/order": [
-      "builtin",
-      "external",
-      "type",
-      "internal",
-      "parent",
-      "sibling",
-      "index",
-      "object",
     ],
   },
 };
