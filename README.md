@@ -1,10 +1,24 @@
 # devtools
+
 All the tools and configs we use for daily dev work. Includes linters, formatters and more. Here you are going to find installation instructions for our company's code-style packages, the reasoning behind as well as general information to how we want to do software development.
 
 These are the tools we use at the moment:
 
 - [ESLint](#ESLint)
 - [Prettier](#Prettier)
+- [Jest](#Jest)
+- [Husky](#Husky)
+
+We are looking into using these additional tools, feel free to add documentation and samples for it:
+
+- Cypress
+- PACT or JSON Schema for API Testing
+
+Below you can find specific installation instructions for the tools. Please open an issue or a pull request if something is not covered or missing.
+
+## Samples
+
+You can refer to the `samples/` directory to find a working setup with ESLint, Prettier, Husky and Jest configured.
 
 ## ESLint
 
@@ -23,13 +37,11 @@ After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`
 }
 ```
 
-If you don't have a config yet, create one by doing `npx eslint --init`.
-
 This allows for addition of custom rules in your config, if there is a need for it. Should there be a need to fully disable or change a rule from this configuration, please open a Pull Request.
 
 ### Supported Languages/Frameworks
 
-Currently only general Javascript and Typescript code is linted. In the future we want to expand to React, React Native, Angular and Node.js (with express and nest.js rules).
+Currently only Typescript code is linted. In the future we want to expand to also cover React, React Native, Angular and Node.js.
 
 ## Prettier
 
@@ -57,6 +69,14 @@ module.exports = {
   semi: false,
 };
 ```
+
+## Jest
+
+We are using Jest as a test framework for backend and frontend unit tests. Refer to its documentation for usage and installation. In the `samples/` directory you can find a basic test together with a npm task able to run the tests.
+
+## Husky
+
+TODO
 
 ## Collaboration
 
