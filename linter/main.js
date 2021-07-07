@@ -22,6 +22,7 @@ module.exports = {
     "max-nested-callbacks": ["error", 3],
     "no-unused-vars": "error",
     "id-length": ["error", { min: 4 }],
+    eqeqeq: ["error", "always"],
     "import/order": [
       "error",
       {
