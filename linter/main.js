@@ -21,6 +21,9 @@ module.exports = {
     "max-depth": ["error", 3],
     "max-nested-callbacks": ["error", 3],
     "id-length": ["error", { min: 2 }],
+    "no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     eqeqeq: ["error", "always"],
     "import/order": [
       "error",
@@ -38,4 +41,13 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      // enable the rule specifically for TypeScript files
+      files: ["*.ts", "*.tsx"],
+      rules: {
+        "@typescript-eslint/explicit-module-boundary-types": ["error"],
+      },
+    },
+  ],
 };
