@@ -1,4 +1,4 @@
-![Digital-H Logo](https://raw.githubusercontent.com/digital-h-gmbh/devtools/cd7cdd408054f68290fdb72061a61c4fac5d0a2e/logo.svg)
+<img src="https://raw.githubusercontent.com/digital-h-gmbh/devtools/cd7cdd408054f68290fdb72061a61c4fac5d0a2e/logo.svg" width="200" height="auto" />
 
 # devtools
 
