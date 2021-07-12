@@ -1,5 +1,7 @@
-<img src="https://raw.githubusercontent.com/digital-h-gmbh/devtools/cd7cdd408054f68290fdb72061a61c4fac5d0a2e/logo.svg" width="200" height="auto" align="center" />
-
+<p align="center>
+  <img src="https://raw.githubusercontent.com/digital-h-gmbh/devtools/cd7cdd408054f68290fdb72061a61c4fac5d0a2e/logo.svg" width="200" height="auto" />
+</p>
+                                                                                                                                                
 # devtools
 
 All the tools and configs we use for daily dev work. Includes linters, formatters and more. Here you are going to find installation instructions for our company's code-style packages, the reasoning behind as well as general information to how we want to do software development.
