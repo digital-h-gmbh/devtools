@@ -12,16 +12,18 @@ npm install --save-dev prettier eslint @digital-h/eslint-config @digital-h/prett
 
 Then set up or make the necessary changes in the following two files:
 
+ESLint configuration file, e.g. 📄 .eslintrc.js:
 ```
-// ESLint configuration file, e.g. .eslintrc.js
 {
   ...,
   "plugins": [ ... ],
   "extends": "@digital-h/eslint-config" <---
   "rules": [...]
 }
+```
 
-// File: package.json
+📄 package.json
+```
 {
   ...,
   "scripts": { ... },
