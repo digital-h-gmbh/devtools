@@ -43,6 +43,7 @@ This documentation includes the following parts:
 
 - [Example Setup](#Samples)
 - [Tools/Packages](#Tools)
+- [Editor Configuration](#Editor-Configuration)
 - [Code Style](#CodeStyle)
 - [How to collaborate](#Collaboration)
 
@@ -123,6 +124,8 @@ We are using Jest as a test framework for backend and frontend unit tests. Refer
 #### Husky
 
 TODO
+
+### Editor-Configuration
 
 ### CodeStyle
 
