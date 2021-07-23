@@ -113,7 +113,7 @@ Or reference it by exporting a single string from your Prettier configuration fi
 
 ```
 module.exports = {
-  ...require("@company/prettier-config"),
+  ...require("@digital-h/prettier-config"),
   // Below are your overrides
   semi: false,
 };
