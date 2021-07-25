@@ -19,8 +19,20 @@ ESLint configuration file, e.g. 📄 .eslintrc.js:
 {
   ...,
   "plugins": [ ... ],
-  "extends": "@digital-h/eslint-config" <---
+  "extends": "@digital-h/eslint-config", <---
   "rules": [...]
+}
+```
+For TypeScript projects you might need to add tsconfig to parserOptions:
+```
+{
+  ...,
+  "plugins": [ ... ],
+  "extends": "@digital-h/eslint-config",
+  "parserOptions: {
+    "project: [ "./tsconfig.json" ],     <---
+  },
+  "rules": [ ... ]
 }
 ```
 
