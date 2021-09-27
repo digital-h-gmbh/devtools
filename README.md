@@ -1,8 +1,6 @@
 <p align="center">
   <img src="https://github.com/digital-h-gmbh/devtools/blob/main/devtools.png?raw=true" alt="CI status" width="100%" />
-</p>
-                                                                                                                                                
-# devtools
+</p>                                                                                                                                            
 
 ## Quickstart
 
