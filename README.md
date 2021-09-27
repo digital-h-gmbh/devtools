@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/digital-h-gmbh/devtools/cd7cdd408054f68290fdb72061a61c4fac5d0a2e/logo.svg" alt="CI status" width="200" />
+  <img src="https://github.com/digital-h-gmbh/devtools/blob/main/devtools.png?raw=true" alt="CI status" width="100%" />
 </p>
                                                                                                                                                 
 # devtools
