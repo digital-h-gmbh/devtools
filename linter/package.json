@@ -1,6 +1,6 @@
 {
   "name": "@digital-h/eslint-config",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "The ESLint configuration for Digital-H",
   "main": "main.js",
   "scripts": {
