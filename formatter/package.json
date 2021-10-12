@@ -1,6 +1,6 @@
 {
   "name": "@digital-h/prettier-config",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "The current prettier config for Digital-H",
   "main": "index.js",
   "scripts": {
