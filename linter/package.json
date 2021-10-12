@@ -30,5 +30,8 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-rxjs": "^3.3.4"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.0.1"
   }
 }

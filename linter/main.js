@@ -8,6 +8,7 @@ module.exports = {
     "plugin:rxjs/recommended",
     "plugin:import/typescript",
     "prettier",
+    "@react-native-community",
   ],
   rules: {
     "prettier/prettier": "error",
