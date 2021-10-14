@@ -20,11 +20,11 @@ module.exports = {
     "max-depth": ["error", 3],
     "max-nested-callbacks": ["error", 3],
     "id-length": ["error", { min: 2, exceptions: ["x", "y", "t"] }],
-    "no-shadow": 0,
+    "no-shadow": "off",
     "no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     eqeqeq: ["error", "always"],
-    "@typescript-eslint/no-unused-vars": 0,
     "import/order": [
       "error",
       {
