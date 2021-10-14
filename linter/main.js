@@ -5,10 +5,8 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:rxjs/recommended",
     "plugin:import/typescript",
     "prettier",
-    "@react-native-community",
   ],
   rules: {
     "prettier/prettier": "error",
@@ -21,10 +19,11 @@ module.exports = {
     ],
     "max-depth": ["error", 3],
     "max-nested-callbacks": ["error", 3],
-    "id-length": ["error", { min: 2 }],
+    "id-length": ["error", { min: 2, exceptions: ["x", "y", "t"] }],
     "no-explicit-any": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "no-unused-imports": ["error", 3],
     eqeqeq: ["error", "always"],
     "import/order": [
       "error",

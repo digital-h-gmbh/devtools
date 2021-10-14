@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://github.com/digital-h-gmbh/devtools/blob/main/devtools.png?raw=true" alt="CI status" width="100%" />
-</p>                                                                                                                                            
+</p>
 
 ## Quickstart
 
@@ -13,6 +13,7 @@ npm install --save-dev prettier eslint @digital-h/eslint-config @digital-h/prett
 Then set up or make the necessary changes in the following two files:
 
 ESLint configuration file, e.g. 📄 .eslintrc.js:
+
 ```
 {
   ...,
@@ -21,7 +22,9 @@ ESLint configuration file, e.g. 📄 .eslintrc.js:
   "rules": [...]
 }
 ```
+
 For TypeScript projects you might need to add tsconfig to parserOptions:
+
 ```
 {
   ...,
@@ -35,6 +38,7 @@ For TypeScript projects you might need to add tsconfig to parserOptions:
 ```
 
 📄 package.json
+
 ```
 {
   ...,
@@ -53,11 +57,18 @@ All the tools and configs we use for daily dev work. Includes linters, formatter
 
 This documentation includes the following parts:
 
-- [Example Setup](#Samples)
-- [Tools/Packages](#Tools)
-- [Editor Configuration](#Editor-Configuration)
-- [Code Style](#CodeStyle)
-- [How to collaborate](#Collaboration)
+- [Quickstart](#quickstart)
+- [General Documentation](#general-documentation)
+  - [Samples](#samples)
+  - [Tools](#tools)
+    - [ESLint](#eslint)
+      - [Supported Languages/Frameworks](#supported-languagesframeworks)
+    - [Prettier](#prettier)
+    - [Jest](#jest)
+    - [Husky](#husky)
+  - [Editor-Configuration](#editor-configuration)
+  - [CodeStyle](#codestyle)
+  - [Collaboration](#collaboration)
 
 Regarding the tools section, these are the tools we use at the moment:
 
@@ -97,6 +108,15 @@ After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`
 ```
 
 This allows for addition of custom rules in your config, if there is a need for it. Should there be a need to fully disable or change a rule from this configuration, please open a Pull Request.
+
+For different development stacks there are different configs (e.g. for a React Native Setup). To use those specifically (they extend the standard config), do the following:
+
+```
+{
+  ...
+  "extends": "@digital-h/eslint-config/react-native-config"
+}
+```
 
 ##### Supported Languages/Frameworks
 
