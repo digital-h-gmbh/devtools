@@ -24,6 +24,7 @@ module.exports = {
     "no-explicit-any": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     eqeqeq: ["error", "always"],
+    "@typescript-eslint/no-unused-vars": 0,
     "import/order": [
       "error",
       {
