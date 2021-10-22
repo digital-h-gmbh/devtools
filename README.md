@@ -10,6 +10,8 @@ To install all the tools we provide, run the following:
 npm install --save-dev prettier eslint @digital-h/eslint-config @digital-h/prettier-config
 ```
 
+If you are prompted to install additional ESLint imports after the install process, do so.
+
 Then set up or make the necessary changes in the following two files:
 
 ESLint configuration file, e.g. 📄 .eslintrc.js:
