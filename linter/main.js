@@ -9,6 +9,8 @@ module.exports = {
     "prettier",
   ],
   rules: {
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "prettier/prettier": "error",
     "max-lines-per-function": [
       "error",
@@ -19,7 +21,7 @@ module.exports = {
     ],
     "max-depth": ["error", 3],
     "max-nested-callbacks": ["error", 3],
-    "id-length": ["error", { min: 2, exceptions: ["x", "y", "t"] }],
+    "id-length": ["error", { min: 2, exceptions: ["x", "y", "t", "f", "m", "n", "d", "i", "_"] }],
     "no-shadow": "off",
     "no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": "off",
