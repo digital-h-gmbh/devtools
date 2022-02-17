@@ -9,6 +9,8 @@ module.exports = {
     "prettier",
   ],
   rules: {
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "prettier/prettier": "error",
     "max-lines-per-function": [
       "error",
