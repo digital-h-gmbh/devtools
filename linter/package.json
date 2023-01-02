@@ -1,6 +1,6 @@
 {
   "name": "@digital-h/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The ESLint configuration for Digital-H",
   "main": "main.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/digital-h-gmbh/devtools#readme",
   "peerDependencies": {
-    "eslint": ">=8"
+    "eslint": ">=8.x.x"
   },
   "dependencies": {
     "@react-native/eslint-config": "^0.72.1",
