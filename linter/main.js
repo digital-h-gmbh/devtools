@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "prettier", "import"],
+  plugins: ["@typescript-eslint", "import"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -9,9 +9,6 @@ module.exports = {
     "prettier",
   ],
   rules: {
-    "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
-    "prettier/prettier": "error",
     "max-lines-per-function": [
       "error",
       {
@@ -23,9 +20,13 @@ module.exports = {
     "max-nested-callbacks": ["error", 3],
     "id-length": ["error", { min: 2, exceptions: ["x", "y", "t", "f", "m", "n", "d", "i", "_"] }],
     "no-shadow": "off",
-    "no-explicit-any": "off",
+    "no-catch-shadow": "off",
+    "no-explicit-any": "warn",
+    "@typescript-eslint/ban-ts-ignore": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
     eqeqeq: ["error", "always"],
     "import/order": [
       "error",

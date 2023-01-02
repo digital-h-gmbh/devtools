@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     "@digital-h/eslint-config",
     "plugin:react/recommended",
-    "@react-native-community",
+    "@react-native",
   ],
   plugins: ["react"],
   rules: {
