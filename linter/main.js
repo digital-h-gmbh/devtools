@@ -22,6 +22,7 @@ module.exports = {
     "max-nested-callbacks": ["error", 3],
     "id-length": ["error", { min: 2, exceptions: ["x", "y", "t", "f", "m", "n", "d", "i", "_"] }],
     "no-shadow": "off",
+    "no-catch-shadow": "off",
     "no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
