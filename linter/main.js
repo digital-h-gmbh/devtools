@@ -43,7 +43,7 @@ module.exports = {
         ],
       },
     ],
-    "import/no-default-export": "error"
+    "import/no-default-export": "error",
   },
   overrides: [
     {
@@ -51,6 +51,15 @@ module.exports = {
       files: ["*.ts", "*.tsx"],
       rules: {
         "@typescript-eslint/explicit-module-boundary-types": ["error"],
+      },
+    },
+    {
+      files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      rules: {
+        // These are turned off to not conflict with prettier
+        "no-extra-semi": "off",
+        "no-mixed-spaces-and-tabs": "off",
+        "no-unexpected-multiline": "off",
       },
     },
   ],
