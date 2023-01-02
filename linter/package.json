@@ -31,5 +31,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-plugin-eslint-plugin": "^5.0.7",
+    "eslint-plugin-node": "^11.1.0"
   }
 }
