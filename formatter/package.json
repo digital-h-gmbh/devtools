@@ -1,6 +1,6 @@
 {
   "name": "@digital-h/prettier-config",
-  "version": "1.4.3",
+  "version": "2.0.0",
   "description": "The current prettier config for Digital-H",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/digital-h-gmbh/devtools/issues"
   },
-  "homepage": "https://github.com/digital-h-gmbh/devtools#readme"
+  "homepage": "https://github.com/digital-h-gmbh/devtools#readme",
+  "peerDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  }
 }
