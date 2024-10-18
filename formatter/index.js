@@ -3,14 +3,14 @@ module.exports = {
   tabWidth: 2,
   singleQuote: true,
   semi: true,
-  printWidth: 120,
+  printWidth: 80,
   useTabs: false,
   bracketSpacing: true,
   arrowParens: "avoid",
   endOfLine: "lf",
   overrides: [
     {
-      files: "*.yml",
+      files: ["*.yml", "*.yaml"],
       options: {
         tabWidth: 2
       }
