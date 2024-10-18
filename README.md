@@ -129,7 +129,7 @@ Currently only Typescript code is linted. In the future we want to expand to als
 Install the configuration with:
 
 ```
-npm i --save-dev prettier @digital-h/prettier-config
+npm i --save-dev prettier @trivago/prettier-plugin-sort-imports prettier-plugin-packagejson prettier-plugin-tailwindcss @digital-h/prettier-config
 ```
 
 After that you can use it in your package.json:
