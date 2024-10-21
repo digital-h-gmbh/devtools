@@ -18,7 +18,7 @@ module.exports = {
   ],
   plugins: ["prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports", "prettier-plugin-packagejson"],
   importOrderParserPlugins: ["typescript", "decorators-legacy", "jsx"],
-  importOrder: ["^@digital-h/(.*)$", "^@/(.*)$", "^[./]"],
+  importOrder: ["^zone.js/(.*)$", "^@digital-h/(.*)$", "^@/(.*)$", "^[./]"],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true
 };
