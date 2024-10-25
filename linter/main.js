@@ -1,13 +1,23 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaVersion: 'ES2022',
+    project: 'tsconfig.json',
+    tsconfigRootDir: __dirname,
+    sourceType: 'module',
+  },
   plugins: ["@typescript-eslint", "import", "unused-imports"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:import/typescript",
     "prettier",
   ],
+  env: {
+    node: true,
+    jest: true,
+  },
+  ignorePatterns: ['.eslintrc.js'],
   rules: {
     "max-lines-per-function": [
       "error",
@@ -26,27 +36,12 @@ module.exports = {
     "no-catch-shadow": "off",
     curly: ["error", "all"],
     "@typescript-eslint/ban-ts-comment": "warn",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/no-explicit-any": "off",
     eqeqeq: ["error", "always"],
-    "import/order": [
-      "error",
-      {
-        groups: [
-          "builtin",
-          "external",
-          "type",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object",
-        ],
-      },
-    ],
     "import/no-default-export": "error",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
@@ -59,13 +54,6 @@ module.exports = {
     ],
   },
   overrides: [
-    {
-      // enable the rule specifically for TypeScript files
-      files: ["*.ts", "*.tsx"],
-      rules: {
-        "@typescript-eslint/explicit-module-boundary-types": ["error"],
-      },
-    },
     {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
       rules: {
