@@ -1,5 +1,6 @@
 import globals from "globals";
 
+import eslint from "eslint";
 import js from "@eslint/js";
 import esImport from "eslint-plugin-import";
 import unusedImports from "eslint-plugin-unused-imports";
@@ -8,6 +9,7 @@ import ts from '@typescript-eslint/eslint-plugin';
 import tsParser from "@typescript-eslint/parser";
 
 export default [
+    eslint.configs.recommended,
     js.configs.recommended,
 {
     ignores: ["**/eslint.config.js"],
@@ -35,6 +37,7 @@ export default [
     },
 
     rules: {
+        ...eslint.configs.recommended.rules,
         ...ts.configs.recommended.rules,
         "no-undef": "off",
         "max-lines-per-function": ["error", {
