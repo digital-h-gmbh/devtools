@@ -1,5 +1,5 @@
 import digitalHEsLintConfig from "@digital-h/eslint-config";
-import eslintReact from "eslint-plugin-react"
+import eslintReact from "eslint-plugin-react";
 import reactNativeConfig from "@react-native/eslint-config";
 
 export default [
@@ -8,7 +8,7 @@ export default [
   ...reactNativeConfig.recommended,
   {
     plugins: {
-      "react": eslintReact,
+      react: eslintReact,
     },
     rules: {
       ...eslintReact.configs.recommended.rules,
@@ -23,5 +23,4 @@ export default [
       "react-native/no-inline-styles": 2,
     },
   },
-
-]
+];

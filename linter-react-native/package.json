@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "postinstall": "patch-package",
-    "publicpublish": "npm publish --access public"
+    "publicpublish": "npm publish --access public",
+    "format": "prettier --write \"eslint.config.js\""
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,8 @@
     "globals": "^15.11.0"
   },
   "devDependencies": {
+    "@digital-h/prettier-config": "^2.0.2",
+    "prettier": "^3.3.3",
     "@eslint/js": "^9.13.0",
     "@react-native/eslint-config": "^0.76.0",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
