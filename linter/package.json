@@ -5,7 +5,8 @@
   "main": "eslint.config.js",
   "type": "module",
   "scripts": {
-    "publicpublish": "npm publish --access public"
+    "publicpublish": "npm publish --access public",
+    "format": "prettier --write \"eslint.config.js\""
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,8 @@
     "globals": "^15.11.0"
   },
   "devDependencies": {
+    "@digital-h/prettier-config": "^2.0.2",
+    "prettier": "^3.3.3",
     "@eslint/js": "^9.13.0",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
@@ -38,5 +41,6 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^15.11.0"
-  }
+  },
+  "prettier": "@digital-h/prettier-config"
 }
