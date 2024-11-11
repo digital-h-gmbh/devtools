@@ -1,16 +1,26 @@
+import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
+import eslint from '@eslint/js';
 import ts from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
-import eslint from '@eslint/js';
 import esImport from 'eslint-plugin-import';
 import esNode from 'eslint-plugin-node';
 import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+  recommendedConfig: js.configs.recommended,
+});
 
 export default [
-  esNode.configs.recommended,
   eslint.configs.recommended,
-  js.configs.recommended,
+  ...compat.config(esNode.configs.recommended),
   {
     ignores: ['**/eslint.config.js'],
   },
@@ -20,15 +30,12 @@ export default [
       'unused-imports': unusedImports,
       import: esImport,
     },
-
     languageOptions: {
       parser: tsParser,
-
       parserOptions: {
         project: 'tsconfig.json',
         ecmaVersion: 'latest',
       },
-
       globals: {
         ...globals.node,
         ...globals.browser,
