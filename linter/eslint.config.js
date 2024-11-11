@@ -3,10 +3,12 @@ import ts from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import eslint from 'eslint';
 import esImport from 'eslint-plugin-import';
+import esNode from 'eslint-plugin-node';
 import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 
 export default [
+  esNode.configs.recommended,
   eslint.configs.recommended,
   js.configs.recommended,
   {
@@ -24,7 +26,6 @@ export default [
 
       parserOptions: {
         project: 'tsconfig.json',
-        // tsconfigRootDir: __dirname,
         ecmaVersion: 'latest',
       },
 
@@ -36,6 +37,7 @@ export default [
     },
 
     rules: {
+      ...esNode.configs.recommended.rules,
       ...eslint.configs.recommended.rules,
       ...ts.configs.recommended.rules,
       'no-undef': 'off',
