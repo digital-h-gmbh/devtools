@@ -1,3 +1,4 @@
+import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
 import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import eslint from '@eslint/js';
@@ -20,15 +21,15 @@ const compat = new FlatCompat({
 
 export default [
   eslint.configs.recommended,
-  ...compat.config(esNode.configs.recommended),
+  ...fixupConfigRules(compat.config(esNode.configs.recommended)),
   {
     ignores: ['**/eslint.config.js'],
   },
   {
     plugins: {
-      '@typescript-eslint': ts,
-      'unused-imports': unusedImports,
-      import: esImport,
+      '@typescript-eslint': fixupPluginRules(ts),
+      'unused-imports': fixupPluginRules(unusedImports),
+      import: fixupPluginRules(esImport),
     },
     languageOptions: {
       parser: tsParser,
@@ -42,11 +43,17 @@ export default [
         ...globals.jest,
       },
     },
-
     rules: {
       ...esNode.configs.recommended.rules,
       ...eslint.configs.recommended.rules,
       ...ts.configs.recommended.rules,
+      'node/no-missing-import': 'off',
+      'node/no-unpublished-import': 'off',
+      'node/no-extraneous-import': 'off',
+      'node/no-unsupported-features/es-syntax': [
+        'error',
+        { ignores: ['modules'] },
+      ],
       'no-undef': 'off',
       'max-lines-per-function': [
         'error',
