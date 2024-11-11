@@ -1,10 +1,12 @@
 {
   "name": "@digital-h/eslint-config",
-  "version": "2.1.0",
+  "version": "3.0.2",
   "description": "The ESLint configuration for Digital-H",
-  "main": "main.js",
+  "main": "eslint.config.js",
+  "type": "module",
   "scripts": {
-    "publicpublish": "npm publish --access public"
+    "publicpublish": "npm publish --access public",
+    "format": "prettier --write \"eslint.config.js\""
   },
   "repository": {
     "type": "git",
@@ -21,20 +23,26 @@
   },
   "homepage": "https://github.com/digital-h-gmbh/devtools#readme",
   "peerDependencies": {
-    "eslint": ">=8.x.x"
-  },
-  "dependencies": {
-    "@react-native/eslint-config": "^0.74.1",
-    "@typescript-eslint/eslint-plugin": "^7.7.0",
-    "@typescript-eslint/parser": "^7.7.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-unused-imports": "^3.1.0"
+    "@eslint/js": "^9.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": ">=9.x.x",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "globals": "^15.11.0"
   },
   "devDependencies": {
-    "eslint": "^8.31.0",
-    "eslint-plugin-eslint-plugin": "^6.0.0",
-    "eslint-plugin-node": "^11.1.0"
-  }
+    "@digital-h/prettier-config": "^2.0.2",
+    "@eslint/js": "^9.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": ">=9.x.x",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3"
+  },
+  "prettier": "@digital-h/prettier-config"
 }
