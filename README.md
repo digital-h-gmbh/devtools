@@ -37,10 +37,10 @@ For TypeScript projects you might need to add tsconfig to parserOptions:
   },
   "rules": [ ... ]
 }
+```
 
 For React Native projects, use `@digital-h/eslint-config-react-native` instead of `@digital-h/eslint-config`
 
-📄 package.json
 
 ```
 {
@@ -98,7 +98,7 @@ You can refer to the `samples/` directory to find a working setup with ESLint, P
 Install the configuration with:
 
 ```
-npm i --save-dev eslint eslint-plugin-import eslint-plugin-unused-imports @digital-h/eslint-config @eslint/js @typescript-eslint/eslint-plugin @typescript-eslint/parser globals
+npm i --save-dev eslint eslint-plugin-import eslint-plugin-node eslint-plugin-unused-imports @digital-h/eslint-config @eslint/js @typescript-eslint/eslint-plugin @typescript-eslint/parser globals
 ```
 
 After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`):
