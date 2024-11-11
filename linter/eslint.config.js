@@ -1,7 +1,7 @@
 import js from '@eslint/js';
 import ts from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
-import eslint from 'eslint';
+import eslint from '@eslint/js';
 import esImport from 'eslint-plugin-import';
 import esNode from 'eslint-plugin-node';
 import unusedImports from 'eslint-plugin-unused-imports';
@@ -66,7 +66,6 @@ export default [
       eqeqeq: ['error', 'always'],
       'import/no-default-export': 'error',
       'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
