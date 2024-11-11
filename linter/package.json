@@ -1,6 +1,6 @@
 {
   "name": "@digital-h/eslint-config",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "The ESLint configuration for Digital-H",
   "main": "eslint.config.js",
   "type": "module",
@@ -28,19 +28,21 @@
     "@typescript-eslint/parser": "^8.11.0",
     "eslint": ">=9.x.x",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^15.11.0"
   },
   "devDependencies": {
     "@digital-h/prettier-config": "^2.0.2",
-    "prettier": "^3.3.3",
     "@eslint/js": "^9.13.0",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
     "eslint": ">=9.x.x",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "globals": "^15.11.0"
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3"
   },
   "prettier": "@digital-h/prettier-config"
 }
