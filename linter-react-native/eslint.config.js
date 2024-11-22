@@ -28,6 +28,7 @@ export default [
   ...fixupConfigRules(compat.config(reactNativeConfig)),
   {
     ignores: [
+      "**/eslint.config.{js,mjs,cjs,ts}",
       "**/__mocks__/**",
       "**/__tests__/**",
       "**/__fixtures__/**",

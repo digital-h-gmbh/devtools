@@ -1,6 +1,6 @@
 {
   "name": "@digital-h/eslint-config-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The React Native ESLint configuration for Digital-H",
   "main": "eslint.config.js",
   "type": "module",
