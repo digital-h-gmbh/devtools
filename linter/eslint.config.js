@@ -109,4 +109,10 @@ export default [
       'no-unexpected-multiline': 'off',
     },
   },
+  {
+    files: ['src/**/*.spec.{ts,js}'],
+    rules: {
+      'max-lines-per-function': 'off', // disables line length check
+    },
+  },
 ];
