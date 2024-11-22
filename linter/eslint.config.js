@@ -1,45 +1,59 @@
+import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
+import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
+import eslint from '@eslint/js';
 import ts from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
-import eslint from 'eslint';
 import esImport from 'eslint-plugin-import';
 import esNode from 'eslint-plugin-node';
 import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+  recommendedConfig: js.configs.recommended,
+});
 
 export default [
-  esNode.configs.recommended,
   eslint.configs.recommended,
-  js.configs.recommended,
+  ...fixupConfigRules(compat.config(esNode.configs.recommended)),
   {
     ignores: ['**/eslint.config.js'],
   },
   {
     plugins: {
-      '@typescript-eslint': ts,
-      'unused-imports': unusedImports,
-      import: esImport,
+      '@typescript-eslint': fixupPluginRules(ts),
+      'unused-imports': fixupPluginRules(unusedImports),
+      import: fixupPluginRules(esImport),
     },
-
     languageOptions: {
       parser: tsParser,
-
       parserOptions: {
         project: 'tsconfig.json',
         ecmaVersion: 'latest',
       },
-
       globals: {
         ...globals.node,
         ...globals.browser,
         ...globals.jest,
       },
     },
-
     rules: {
       ...esNode.configs.recommended.rules,
       ...eslint.configs.recommended.rules,
       ...ts.configs.recommended.rules,
+      'node/no-missing-import': 'off',
+      'node/no-unpublished-import': 'off',
+      'node/no-extraneous-import': 'off',
+      'node/no-unsupported-features/es-syntax': [
+        'error',
+        { ignores: ['modules'] },
+      ],
       'no-undef': 'off',
       'max-lines-per-function': [
         'error',
@@ -66,7 +80,6 @@ export default [
       eqeqeq: ['error', 'always'],
       'import/no-default-export': 'error',
       'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
