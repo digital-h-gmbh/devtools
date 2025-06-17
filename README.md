@@ -39,8 +39,8 @@ For TypeScript projects you might need to add tsconfig to parserOptions:
 }
 ```
 
-For React Native projects, use `@digital-h/eslint-config-react-native` instead of `@digital-h/eslint-config`
 
+To setup `prettier` add the following to `package.json`:
 
 ```
 {
@@ -112,13 +112,15 @@ After that you can use it in your ESLint configuration file (e.g. `.eslintrc.js`
 
 This allows for addition of custom rules in your config, if there is a need for it. Should there be a need to fully disable or change a rule from this configuration, please open a Pull Request.
 
-For different development stacks there are different configs (e.g. for a React Native Setup). To use those specifically (they extend the standard config), do the following:
+For different development stacks there are different configs (e.g. for a React Native Setup). To use those specifically (they extend the standard config) add the following:
 
-```
-{
-  ...
-  "extends": "@digital-h/eslint-config-react-native"
-}
+```js
+// eslint.config.mjs
+import digitalHEsLintConfig from '@digital-h/eslint-config-react-native';
+
+export default [
+  ...digitalHEsLintConfig,
+];
 ```
 
 ##### Supported Languages/Frameworks
