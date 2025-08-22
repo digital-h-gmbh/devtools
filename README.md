@@ -71,7 +71,7 @@ This documentation includes the following parts:
     - [Husky](#husky)
   - [Editor-Configuration](#editor-configuration)
   - [CodeStyle](#codestyle)
-  - [Collaboration](#collaboration)
+  - [Release Process](#release-process)
 
 Regarding the tools section, these are the tools we use at the moment:
 
@@ -170,12 +170,21 @@ TODO
 
 TODO
 
-### Collaboration
+### Release Process
+If you want to collaborate set up a PR with your code changes. Currently you have to manually publish the included packages to npm. You can do this by:
 
-If you want to collaborate set up a PR with your code changes. Currently you have to manually publish the included packages to npm. You can do this by running:
-
+Make sure you are logged in in and part of the digital-h npm organization:
 ```
-# In the respective directory - Make sure you are logged in and part of the digital-h npm organization
-npm version <NEW_VERSION_NUMBER>
+npm login
+```
+You can use these shared [npm credentials](https://start.1password.com/open/i?a=RJEAIJQERRDWRFWHTGL3A5Q5Q4&v=z2ab3ef6iquz67k65uiqayuga4&i=ianbdal2hatsmailrr72pvzptq&h=digitalh.1password.eu) Account: `npmjs.com`
+
+Bump the version and make sure you are in the proper directory (e.g. /linter)
+```
+npm version <NEW_VERSION_NUMBER> // e.g. 3.1.6
+```
+After successfully updating the version the new version can published:
+```
 npm run publicpublish
 ```
+Last but not least commit and push the changed files.
