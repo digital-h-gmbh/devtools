@@ -52,7 +52,15 @@ export default [
       'node/no-extraneous-import': 'off',
       'node/no-unsupported-features/es-syntax': [
         'error',
-        { ignores: ['modules'] },
+        { version: '>=18.0.0',
+          ignores: ['modules']
+        },
+      ],
+      'node/no-unsupported-features/node-builtins': [
+        'error',
+        {
+          version: '>=18.0.0',
+        },
       ],
       'no-undef': 'off',
       'max-lines-per-function': [
