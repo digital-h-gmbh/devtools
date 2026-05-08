@@ -87,6 +87,11 @@ export default [
       '@typescript-eslint/no-explicit-any': 'off',
       eqeqeq: ['error', 'always'],
       'import/no-default-export': 'error',
+      'import/no-duplicates': 'error',
+      'no-useless-return': 'error',
+      '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+      '@typescript-eslint/no-redundant-type-constituents': 'error',
+      '@typescript-eslint/prefer-readonly': 'error',
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'warn',
