@@ -89,9 +89,6 @@ export default [
       'import/no-default-export': 'error',
       'import/no-duplicates': 'error',
       'no-useless-return': 'error',
-      '@typescript-eslint/no-unnecessary-type-assertion': 'error',
-      '@typescript-eslint/no-redundant-type-constituents': 'error',
-      '@typescript-eslint/prefer-readonly': 'error',
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'warn',
@@ -112,6 +109,18 @@ export default [
           argsIgnorePattern: '^_',
         },
       ],
+    },
+  },
+  {
+    // Type-aware rules must only run on TypeScript files. They rely on type
+    // information from the @typescript-eslint parser; on plain JS files (e.g.
+    // when consumers lint via @babel/eslint-parser, like the react-native config)
+    // these rules throw "you have used a rule which requires type information".
+    files: ['**/*.ts', '**/*.tsx'],
+    rules: {
+      '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+      '@typescript-eslint/no-redundant-type-constituents': 'error',
+      '@typescript-eslint/prefer-readonly': 'error',
     },
   },
   {
