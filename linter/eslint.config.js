@@ -118,11 +118,6 @@ export default [
     // these rules throw "you have used a rule which requires type information".
     files: ['**/*.ts', '**/*.tsx'],
     rules: {
-      // 'warn' (not 'error') on purpose: this rule relies on type information that
-      // can diverge from tsc's view (e.g. workspace packages resolving to built
-      // .d.ts files), producing false positives whose autofix removes assertions
-      // that are actually required. Roll it out manually rather than via bulk autofix.
-      '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
       '@typescript-eslint/no-redundant-type-constituents': 'error',
       '@typescript-eslint/prefer-readonly': 'error',
     },
